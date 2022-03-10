@@ -1,0 +1,22 @@
+# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# File: .github/workflows/pull-request.yml
+name: Pull Request 1
+
+on:
+  push:
+    branches:
+    - tea
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "dev1"
+        github_token: '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'
