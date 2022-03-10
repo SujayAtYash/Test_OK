@@ -11,5 +11,14 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: Every time
-        run: echo "This step will always run"
+      - name: checking out code
+        uses: actions/checkout@v2
+
+      # Make changes to pull request here
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: 'main'
+          base: 'tea'
+          token: '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'
