@@ -6,7 +6,7 @@
 on:
   schedule:
     - cron: '5 * * * *'
-name: create-pull-request workflow
+name: create-pull-request workflow1
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
