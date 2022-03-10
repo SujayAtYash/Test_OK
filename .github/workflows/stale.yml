@@ -7,7 +7,7 @@ name: Mark stale issues and pull requests
 
 on:
  - name: Run the Action
-      uses: devops-infra/action-pull-request@v0.4.2
+      uses: devops-infra/action-pull-request
       with:
         github_token: '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'
         source_branch: tea
