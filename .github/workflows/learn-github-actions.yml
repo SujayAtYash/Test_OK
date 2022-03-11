@@ -11,4 +11,6 @@ jobs:
       - run: npm install -g bats
       - run: bats -v
       - run: hub pull-request -b master -h tea
-
+        env:
+          GITHUB_USER: ${{ secrets.GITHUB_USER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
