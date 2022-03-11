@@ -20,14 +20,7 @@ jobs:
     steps:
     - uses: actions/stale@v3
       with:
-        repo-token: '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'
-    
+        repo-token: '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'  
     - uses: actions/checkout@v1
     - name: Install hub
       uses: geertvdc/setup-hub@master
-    - name: run hub commands
-      env:
-        GITHUB_USER: ${{ secrets.GITHUB_USER }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-         hub pull-request -b master -h tea
