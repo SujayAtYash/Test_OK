@@ -22,5 +22,6 @@ jobs:
       with:
         repo-token: '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'  
     - uses: actions/checkout@v1
-    - name: Install hub
-      uses: geertvdc/setup-hub@master
+    - name: Setup Hub
+      uses: Geertvdc/setup-hub@v1.0.0
+
