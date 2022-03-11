@@ -10,8 +10,8 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
+      - run: git config --global core.editor "vim"
       - run: hub pull-request --base master --head tea -e "First Commit"
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GIT_EDITOR: '~/bin/vi'
