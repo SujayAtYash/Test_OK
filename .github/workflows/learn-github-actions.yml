@@ -10,7 +10,7 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-      - run: hub pull-request --base master --head tea
+      - run: hub pull-request --base master --head tea -e "First Commit"
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
