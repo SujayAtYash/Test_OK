@@ -14,4 +14,4 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo ${process.env.GITHUB_EVENT_PATH}"
+      - run: "echo PR ${process.env.GITHUB_EVENT_PATH}"
