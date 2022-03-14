@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: git config --global core.editor "vim"
-      - run: hub pull-request -m "Second Commit1" --base master --head tea -l "Please Review" - r "SujayAtYash"
+      - run: hub pull-request -m "Second Commit1" - r "Sujay.Mane@Yash.com" --base master --head tea -l "Please Review" 
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
