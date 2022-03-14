@@ -15,7 +15,10 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: view the PR number
-        run: |
-          echo "PR number = ${{ github.event.pull_request.number }}"
-          echo "PR number = ${{ env.PR_NUMBER }}"
+      - name: merge
+        uses: mtanzi/action-automerge@v1
+        id: merge
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          source: 'tea'
+          target: 'master' "
