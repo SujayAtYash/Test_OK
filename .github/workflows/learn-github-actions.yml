@@ -10,4 +10,4 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo "Hello ${GITHUB_REF}"
+      - run: hub pr list
