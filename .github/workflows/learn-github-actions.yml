@@ -19,7 +19,7 @@ jobs:
         uses: juliangruber/find-pull-request-action@v1
         id: find-pull-request
         with:
-          branch: my-branch-name
+          branch: tea
       - run: echo "Pull Request ${number} (${sha})"
         env:
           number: ${{ steps.find-pull-request.outputs.number }}
