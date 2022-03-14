@@ -14,4 +14,5 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo  ${github.event.number}"
+      - run: PR_NUMBER = $(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
+      - run: echo PR_NUMBER
