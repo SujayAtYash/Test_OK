@@ -19,7 +19,7 @@ jobs:
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: 1
+          number: 28
       - name: merge
         uses: mtanzi/action-automerge@v1
         id: merge
