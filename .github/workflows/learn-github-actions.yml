@@ -15,4 +15,4 @@ jobs:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: PR_NUMBER = $(echo $GITHUB_REF | awk 'BEGIN { FS = "/" } ; { print $3 }')
-      - run: echo PR_NUMBER
+      - run: echo "hello ${github.event.pull_request.number}"
