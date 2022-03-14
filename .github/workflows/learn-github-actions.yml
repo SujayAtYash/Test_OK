@@ -10,4 +10,4 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo "Your PR is ${{ github.event.pull_request.head.sha }}"
+      - run: echo "Your PR1 is ${{ github.event.pull_request.head.sha }}"
