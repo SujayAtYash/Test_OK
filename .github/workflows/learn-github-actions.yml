@@ -12,4 +12,4 @@ jobs:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           prNumber: ${{ steps.PR.outputs.number }}
-      - run: echo "Your PR1 is ${{ prNumber }}"
+      - run: echo "Your PR is ${prNumber}
