@@ -10,4 +10,4 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: hub merge 'https://github.com/SujayAtYash/Test_OK/pull/7'
+      - run: echo "Your PR is ${{ github.event.pull_request.head.sha }}"
