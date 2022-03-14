@@ -7,7 +7,9 @@ jobs:
       - uses: actions/checkout@v2
       - run: git config --global core.editor "vim"
       - run: hub pull-request -m "Second Commit1" --reviewer "SujayAtYash" --base master --head tea -l "Please Review" 
+        id: PR
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo "Your PR1 is ${{ github.event.pull_request.head.sha }}"
+          prNumber: ${{ steps.PR.outputs.number }}
+      - run: echo "Your PR1 is ${{ prNumber }}"
