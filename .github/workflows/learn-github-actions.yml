@@ -15,6 +15,12 @@ jobs:
         env:
           GITHUB_USER: ${{ secrets.GITHUB_USER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Approve Pull Request
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: 1
+          repo: juliangruber/approve-pull-request-action # optional
       - name: merge
         uses: mtanzi/action-automerge@v1
         id: merge
