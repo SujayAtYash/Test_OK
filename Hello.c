@@ -5,5 +5,5 @@ int main(void)
 	puts("Hello");
 	Puts("World");
 	puts("!!!!");
-	put("Hello World 2")
+	put("Hello World 4")
 }
