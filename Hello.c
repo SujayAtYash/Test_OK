@@ -3,4 +3,6 @@
 int main(void)
 {
 	puts("Hello");
+	Puts("World");
+	puts("!!!!");
 }
