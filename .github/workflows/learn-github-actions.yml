@@ -21,4 +21,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           source: 'tea'
-          target: 'master' "
+          target: 'master'
